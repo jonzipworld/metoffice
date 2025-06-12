@@ -2,45 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Snowdonia Mountain Weather</title>
+  <title>Snowdonia Forecast</title>
   <style>
     body {
       margin: 0;
       padding: 2rem;
-      background: #f5f9ff;
       font-family: Arial, sans-serif;
+      background: #eef3f9;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
 
     .metoffice-mountain-forecast {
-      display: block;
       max-width: 800px;
       width: 100%;
       height: 600px;
       border: none;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     h1 {
-      text-align: center;
-      color: #003C71;
-      font-size: 1.5rem;
+      color: #003c71;
     }
   </style>
 </head>
 <body>
-  <div>
-    <h1>Snowdonia Mountain Forecast</h1>
-    <a class="metoffice-mountain-forecast"
-       href="https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain/snowdonia?theme=light"
-       data-theme="light"
-       data-type="mountain"
-       data-fcid="snowdonia"
-       data-width="100%"
-       data-height="600">
-    </a>
-    <script async src="https://www.metoffice.gov.uk/includes/webmaster-widget/mountain/loader.js"></script>
-  </div>
+  <h1>Snowdonia Mountain Weather</h1>
+  <a class="metoffice-mountain-forecast"
+     data-type="mountain"
+     data-fcid="snowdonia"
+     data-theme="light"
+     data-width="100%"
+     data-height="600"
+     href="https://www.metoffice.gov.uk/weather/specialist-forecasts/mountain/snowdonia">
+  </a>
+  <script async src="https://www.metoffice.gov.uk/includes/webmaster-widget/mountain/loader.js"></script>
 </body>
 </html>
